@@ -1,6 +1,6 @@
 import re
 
-with open("TOKYO_192GB_32CPU.csv") as file:
+with open("SNG_128GB_24CPU_delta.csv") as file:
     content = file.readlines()
 
 def parseblock(line):
@@ -10,7 +10,7 @@ def parsetimedt(line):
     return int(float(re.match(r".*, (.*)", line).group(1)))
 
 
-blocks_per_datapt = 100000
+blocks_per_datapt = 10000
 block_over = blocks_per_datapt
 timesum = 0
 
