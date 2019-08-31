@@ -1,6 +1,6 @@
 import re
 
-with open("TOKYO_192GB_32CPU_delta.csv") as file:
+with open("CA_16GB_6CPU_delta.csv") as file:
     content = file.readlines()
 
 def parseblock(line):
